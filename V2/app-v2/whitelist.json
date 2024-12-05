@@ -1,0 +1,43 @@
+{
+    "tech_skills": [
+    "python", "py", "javascript", "js", "java", "c++", "c#", "csharp", 
+    "ruby", "go", "golang", "swift", "kotlin", "php", "typescript", 
+    "ts", "scala", "perl", "rust", "haskell", "r", "matlab", "shell",
+    "bash", "powershell", "dart", "objective-c", "objc", "groovy", 
+    "elixir", "clojure", "f#", "assembly", "asm", "julia", "fortran", 
+    "cobol", "erlang", "lua", "vba", "pl/sql", "plsql",
+    "django", "flask", "node.js", "nodejs", "node", "express", "spring", 
+    "laravel", "rails", "ruby on rails", "asp.net", "angular", "angularjs", 
+    "react", "reactjs", "vue", "vuejs", "svelte", "next.js", "nextjs", 
+    "nuxt.js", "nuxtjs", "bootstrap", "tailwind", "material-ui", "mui", 
+    "graphql", "redux",
+    "mysql", "sql", "postgresql", "postgres", "mongo", "mongodb", 
+    "sqlite", "oracle", "redis", "cassandra", "elasticsearch", 
+    "elastic search", "couchdb", "dynamodb", "sql server", 
+    "firebase", "hbase", "neo4j", "bigquery", "clickhouse", 
+    "redshift", "snowflake",
+    "docker", "kubernetes", "k8s", "terraform", "cloudformation", "ansible", "puppet", 
+    "chef", "jenkins", "git", "github", "github actions", 
+    "bitbucket", "bitbucket pipelines", "teamcity", "circleci", 
+    "travis ci", "nagios", "prometheus", "grafana", "splunk", 
+    "new relic",
+    "aws", "amazon web services", "azure", "gcp", "google cloud platform", 
+    "heroku", "digitalocean", "cloudflare", "openstack", "vmware", "kafka",
+    "linux", "windows", "macos", "mac os", "nosql", "apache", "nginx", 
+    "webpack", "babel", "eslint", "prettier", "yarn", "npm", "pnpm", 
+    "vagrant", "virtualbox", "unity", "unreal engine", "ue", "opencv", 
+    "tensorflow", "keras", "pytorch", "torch", "scikit-learn", 
+    "hadoop", "spark", "airflow"
+    ],
+    "soft_skills": [
+        "communication", "teamwork", "leadership", "problem-solving", 
+        "critical thinking", "adaptability", "creativity", "time management",
+        "interpersonal skills", "collaboration", "emotional intelligence", 
+        "work ethic", "conflict resolution", "decision making", 
+        "self-motivation", "organization", "resilience", "flexibility"
+    ],
+    "buzzwords": [
+        "agile", "scrum", "microservices", "data-driven", "cross-functional", 
+        "continuous delivery", "cloud-native", "scalability", "devops"
+    ]
+}

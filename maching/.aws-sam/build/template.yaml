@@ -1,0 +1,52 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Lambda function with API Gateway and Custom Domain for Job Descriptions
+Globals:
+  Api:
+    Cors:
+      AllowMethods: '''GET,POST,OPTIONS'''
+      AllowHeaders: '''content-type'''
+      AllowOrigin: '''https://gingerbreadmat.com'''
+Resources:
+  ProcessJobDescriptionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      CodeUri: ProcessJobDescriptionFunction
+      MemorySize: 128
+      Timeout: 30
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      - AmazonS3FullAccess
+      Environment:
+        Variables:
+          BUCKET_NAME: gingerbread-matching-ai
+      Events:
+        ApiGateway:
+          Type: Api
+          Properties:
+            Path: /process
+            Method: POST
+    Metadata:
+      SamResourceId: ProcessJobDescriptionFunction
+  CustomDomain:
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      DomainName: matching-ai.gingerbreadmat.com
+      EndpointConfiguration:
+        Types:
+        - REGIONAL
+      RegionalCertificateArn: arn:aws:acm:eu-west-2:507844679777:certificate/68d2bf8d-8050-4280-b157-9b104daf496e
+  ApiGatewayBasePathMapping:
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      DomainName: matching-ai.gingerbreadmat.com
+      RestApiId:
+        Ref: ServerlessRestApi
+      Stage: Prod
+    DependsOn: CustomDomain
+Outputs:
+  ApiEndpoint:
+    Value: https://matching-ai.gingerbreadmat.com
+    Description: Custom domain for the API

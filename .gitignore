@@ -1,0 +1,57 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon?
+._*
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+*.venv
+ENV/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+.eggs/
+
+# AWS files
+.aws/
+*.json # Add this if you don't want to include JSON files like `results.json` in your repo
+*.pem
+
+# Logs and local config
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Files that might be generated during execution
+*.cache
+*.tar.gz
+*.zip
+
+# Ignore your backup files
+front-end/base.html~
+front-end/cv.pdf~
+front-end/script.js~
+front-end/styles.css~

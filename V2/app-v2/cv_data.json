@@ -1,0 +1,50 @@
+{
+    "tech_skills": [
+      "python", "bash", "c#", "c++", "groovy", "java", "jquery", "json",
+      "mongo", "mysql", "node", "php", "postgresql", "powershell", 
+      "react", "typescript", "symfony", "reactjs", "node.js", "express", 
+      "django", "flask", "aws", "docker", "linux", "jenkins", "terraform", 
+      "cloudformation", "git", "github actions", "bitbucket pipelines", 
+      "teamcity", "spacelift", "serverless", "mongodb", "mariadb", 
+      "elasticsearch", "npm", "swagger", "vagrant", "elastic search", 
+      "next.js", "storyblok", "google analytics", "cms", "api", "llms",
+      "open tofu", "lambda", "react.js", "groovy pipelines", 
+      "docker files", "cloudformation scripts", "ec2", "ci/cd pipelines"
+    ],
+    "soft_skills": [
+      "communication", "teamwork", "adaptability", "problem-solving", 
+      "critical thinking", "leadership", "creativity", "time management", 
+      "collaboration", "decision making", "resilience", "self-motivation", 
+      "organization", "flexibility", "customer interaction", 
+      "documentation", "mentorship", "cross-team coordination", 
+      "efficiency improvement"
+    ],
+    "experience_years": 9,
+    "education": "bachelor's degree",
+    "key_projects": [
+      {
+        "title": "AWS Infrastructure Rebuild",
+        "description": "Rewrote infrastructure as code (IaC) using Terraform/Open Tofu, integrated reusable modules with Spacelift, and optimized AWS deployment pipelines for cost reduction and scalability."
+      },
+      {
+        "title": "Platform Stability and Automation",
+        "description": "Improved Togather's platform stability by addressing outages in Linux-based systems, automating pipelines, and resolving critical customer issues."
+      },
+      {
+        "title": "Drupal to React Migration",
+        "description": "Migrated Drupal 7 architecture to Docker & AWS, creating CloudFormation scripts, Docker files, and ReactJS-based replacements hosted on Amazon S3."
+      },
+      {
+        "title": "Monitoring Solution Development",
+        "description": "Designed and implemented monitoring solutions to track infrastructure performance and security, integrating tools like Jenkins and Bitbucket."
+      }
+    ],
+    "notable_tools": [
+      "aws", "terraform", "docker", "jenkins", "bitbucket", "linux", 
+      "python", "reactjs", "node.js", "groovy", "php", "elastic search", 
+      "open tofu", "spacelift", "serverless", "ec2", "google analytics", 
+      "github actions", "teamcity", "swagger", "vagrant", "mysql/mariadb", 
+      "mongodb", "typescript"
+    ]
+  }
+  

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mathew Whitmore - Developer">
+    <title>Mathew Whitmore | Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+    <div class="site">
+        <header>
+            <label class="hamburger">
+                <input type="checkbox" onclick="toggleMobileNav()" />
+                <svg viewBox="0 0 32 32">
+                    <path
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                        class="line line-top-bottom"></path>
+                    <path d="M7 16 27 16" class="line"></path>
+                </svg>
+            </label>
+            <div class="title">
+                <h1 class="animate__animated animate__fadeInDown" style="text-align: center;">Mathew Whitmore</h1>
+                <p class="animate__animated animate__fadeInUp" style="text-align: center;">Developer</p>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li><button class="ui-btn" onclick="showContent('profile')"><span>Profile</span></button></li>
+                    <li><button class="ui-btn" onclick="showContent('job-matcher')"><span>Matcher AI</span></button>
+                    </li>
+                    <li><button class="ui-btn" onclick="showContent('experience')"><span>Experience</span></button></li>
+                    <li><button class="ui-btn" onclick="showContent('contact')"><span>Contact</span></button></li>
+                    <li><button class="ui-btn" onclick="window.open('./cv.pdf', '_blank');" download><span>Download
+                                CV</span></button></li>
+                    <li><button class="ui-btn" onclick="showContent('customise')"><span>Customise</span></button></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-list">
+                <li><button class="ui-btn"
+                        onclick="showContent('profile'); toggleMobileNav();"><span>Profile</span></button></li>
+                <li><button class="ui-btn" onclick="showContent('job-matcher')"><span>Matcher AI</span></button></li>
+                <li><button class="ui-btn"
+                        onclick="showContent('experience'); toggleMobileNav();"><span>Experience</span></button></li>
+                <li><button class="ui-btn"
+                        onclick="showContent('contact'); toggleMobileNav();"><span>Contact</span></button></li>
+                <li><button class="ui-btn"
+                        onclick="window.open('./cv.pdf', '_blank'); toggleMobileNav();"><span>Download
+                            CV</span></button></li>
+                <li><button class="ui-btn"
+                        onclick="showContent('customise'); toggleMobileNav();"><span>Customise</span></button></li>
+            </ul>
+        </div>
+        <main>
+            <section id="profile" class="content-section animate__animated animate__fadeIn" style="display:block;">
+                <h2 class="page-title">Introduction</h2>
+                <p> I’ve built a simple site to host my latest project: Matcher AI. I’ve spent most of my career in
+                    backend and infrastructure, so design isn’t really my thing—but I threw this together quickly as a
+                    home for Matcher AI.
+
+                    Here’s how it works: you drop a job description into Matcher AI, and it’ll give you a percentage
+                    score on how likely I am to be a good fit for the role. It’s designed to be unbiased, so if the job
+                    description says “must bake cakes,” and I’m not a baker, I won’t match—even though I can bake a
+                    decent cake.
+
+                    Feel free to look around the site and try out Matcher AI. Even if I’m not the right fit for you, I’d
+                    really love your feedback, especially on Matcher AI. What works? What doesn’t? Anything confusing?
+                </p>
+                <h2 class="page-title">Profile</h2>
+                <p>Full-stack engineer with good skills across both web development and DevOps disciplines. Learning
+                    about new technologies and practices has always been appealing to me. This has always felt
+                    imperative to be able to use the proper tooling to effectively and efficiently help innovate faster
+                    through automating and streamlining the software development and infrastructure management
+                    processes.
+                    I am not one to turn off my development brain when the workday is over. I frequently find myself
+                    working on my projects late into the evening as there is just too much exciting technology out
+                    there. I firmly believe in the power and versatility of Bash scripting, as it allows for the
+                    efficient automation of a wide range of tasks. With Bash, I've crafted intricate scripts to
+                    streamline processes, manage system configurations, and automate routine tasks, showcasing its
+                    ability to handle diverse challenges effectively. I use it constantly in my professional and
+                    personal life. I recently created a unified smart hub to control my house, and this wouldn’t have
+                    been possible without my extensive knowledge in bash and Linux. </p>
+                <div class="customise-container">
+                    <div class="base-card">
+                        <h4>Technical Skills</h4>
+                        <p>Proficient in JavaScript, Python, Docker, and AWS. Experienced in building scalable web
+                            applications and managing cloud infrastructure.</p>
+                    </div>
+                    <div class="base-card">
+                        <h4>Soft Skills</h4>
+                        <p>Strong problem-solving skills, effective communication, and teamwork. Adept at learning new
+                            technologies quickly and applying them effectively.</p>
+                    </div>
+                    <div class="base-card">
+                        <h4>Skills</h4>
+                        <p>Bash, C#/C++, Git, Groovy, Java, jQuery, JSON, Mongo, MySQL, Node, PHP, PostgreSQL, Power
+                            Shell, Python, React, Typescript</p>
+                    </div>
+                    <div class="base-card">
+                        <h4>Technology</h4>
+                        <p>AWS, Docker, Linux, Jenkins, Terraform, Elasticsearch, Drupal, NPM, Serverless, Swagger,
+                            Symfony, TeamCity, Github Actions, GraphQL, Vagrant, Bitbucket Pipelines</p>
+                    </div>
+                </div>
+            </section>
+            <section id="job-matcher" class="content-section animate__animated animate__fadeIn" style="display:none;">
+                <div class="matching-form-container">
+                    <div class="matching-form-card">
+                        <div class="matching-form-title">Job Description Matcher</div>
+                        <form class="matching-form">
+                            <textarea class="matching-form-textarea" id="jobDescription" rows="10"
+                                placeholder="Enter the job description here..."></textarea>
+                            <button type="button" class="matching-form-btn"
+                                onclick="submitJobDescription()">Submit</button>
+                        </form>
+                        <div class="matching-form-result-container">
+                            <h2>Result:</h2>
+                            <pre id="result" class="matching-form-result"></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="content-section animate__animated animate__fadeIn" style="display:none;">
+                <h2 class="page-title">Experience</h2>
+                <div class="experience-wrapper">
+                    <aside class="experience-sidebar">
+                        <div class="customise-container">
+                            <a href="#senior-technical-engineer" class="base-card experience-card">
+                                <h4 class="experience-card-header">SENIOR TECHNICAL ENGINEER</h4>
+                                <hr class="experience-card-line">
+                                <p class="experience-card-text">TOTEM</p>
+                            </a>
+                            <a href="#devops-engineer-togather" class="base-card experience-card">
+                                <h4 class="experience-card-header">DEVOPS ENGINEER</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">TOGATHER</p>
+                            </a>
+                            <a href="#devops-engineer-haymarket" class="base-card experience-card">
+                                <h4 class="experience-card-header">DEVOPS ENGINEER</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">HAYMARKET</p>
+                            </a>
+                            <a href="#full-stack-developer" class="base-card experience-card">
+                                <h4 class="experience-card-header">FULL STACK DEVELOPER</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">HAYMARKET</p>
+                            </a>
+                            <a href="#drupal-developer" class="base-card experience-card">
+                                <h4 class="experience-card-header">DRUPAL DEVELOPER</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">HAYMARKET</p>
+                            </a>
+                            <a href="#traffic-manager" class="base-card experience-card">
+                                <h4 class="experience-card-header">TRAFFIC MANAGER</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">HAYMARKET</p>
+                            </a>
+                            <a href="#games-tools-programmer" class="base-card experience-card">
+                                <h4 class="experience-card-header">GAMES & TOOLS PROGRAMMER</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">FREELANCE</p>
+                            </a>
+                            <a href="#program-director" class="base-card experience-card">
+                                <h4 class="experience-card-header">PROGRAM DIRECTOR</h4>
+                                <hr class="experience-card-line">
+                                <p style="font-weight: bold;">CHANNEL 3 CAMP</p>
+                            </a>
+                        </div>
+                    </aside>
+                    <div class="details-section base-card">
+                        <div>
+                            <div class="pricing-block-content">
+                                <div id="senior-technical-engineer">
+                                    <h3>TOTEM</h3>
+                                    <h3>SENIOR TECHNICAL ENGINEER</h3>
+                                    <h3>MAY 2024 - NOV 2024</h3>
+                                    <p>At Totem, my primary responsibility is to the infrastructure hosted in AWS,
+                                        streamlining the deployment pipelines and reducing costs. I have recently been
+                                        appointed to guiding departments in AI integration and exploring LLMs within the
+                                        application. On arrival I was tasked to analyse the existing infrastructure as
+                                        code (IaC), primarily written in Terraform/Open Tofu with some serverless
+                                        components. The analysis phase was brief, as it quickly became clear that a
+                                        complete rewrite was necessary. I designed a new deployment approach and rewrote
+                                        all the IaC, leveraging Spacelift to create highly reusable modules. This was
+                                        essential, as the application structure required a multi-repo project. The
+                                        result is a cost-effective system that supports the deployment of various
+                                        compute services across multiple environments, fully configurable and
+                                        documented. During this process, it made sense to automate many existing
+                                        processes and write documentation for several repositories, covering code
+                                        structure, local development, dependencies, development workflow, and process.
+                                    </p>
+                                </div>
+                                <div id="devops-engineer-togather">
+                                    <h3>TOGATHER</h3>
+                                    <h3>DEVOPS ENGINEER</h3>
+                                    <h3>OCT 2022 - NOV 2023</h3>
+                                    <p>As a DevOps Engineer at Togather, I played a crucial role in enhancing our
+                                        deployment processes. I successfully implemented, updated, and managed
+                                        streamlined pipelines, significantly improving the efficiency of our deployment
+                                        procedures. This initiative resulted in a noticeable increase in operational
+                                        efficiency and overall productivity. During my first few months, dealing with
+                                        outages was key, as Togather’s platform was not stable. Being able to jump into
+                                        the underlying Linux-based systems and fix issues kept Togather’s customers
+                                        trading. I have spoken to customers who were directly affected by these issues,
+                                        and the work I did to improve and fix these issues directly contributed to their
+                                        success.</p>
+                                </div>
+                                <div id="devops-engineer-haymarket">
+                                    <h3>HAYMARKET</h3>
+                                    <h3>DEVOPS ENGINEER</h3>
+                                    <h3>NOV 2018 - OCT 2022</h3>
+                                    <p>As a DevOps Engineer, I was responsible for creating, maintaining, and improving
+                                        pipelines, mostly in Jenkins and Bitbucket. Ensuring our sites are secure and
+                                        stable, currently, our average downtime is less than 1%. I also made sure to
+                                        have as much of our infrastructure in code as possible, primarily in
+                                        CloudFormation and Terraform with a heavy reliance on Docker. I have tried to
+                                        automate as many manual tasks as possible using Bash, Python, JavaScript, and
+                                        some Go. This has freed up day-to-day time to allow me to focus on larger
+                                        projects, for example, a separation of dev and prod environments and building a
+                                        monitoring solution, without any negative impact on other teams. For Jenkins, I
+                                        updated our Java extensions to carry out various tasks automatically and make
+                                        them work with other applications. I designed its structure, wrote code for
+                                        different parts of the system, tested them, built CI/CD pipelines for the
+                                        delivery process, kept versions under control, and fixed bugs. In order to
+                                        produce better results, we had to consider safety, increase optimization, and
+                                        enable expansion through collecting valuable information. I was responsible for
+                                        setting up, securing, and scaling the Java application on Amazon EC2 instances.
+                                        All this wouldn't be possible without strong relationships between myself and
+                                        the teams around me. I strive to improve our system and process while
+                                        coordinating with all parts of the business, from tech leads, architects, and
+                                        developers to ad technicians, product, and sales teams.</p>
+                                </div>
+                                <div id="full-stack-developer">
+                                    <h3>HAYMARKET</h3>
+                                    <h3>FULL STACK DEVEL</h3>
+                                    <h3>OCT 2017 - NOV 2018</h3>
+                                    <p>Migrated Drupal 7 architecture to Docker & AWS involving writing CloudFormation
+                                        scripts, docker files, groovy pipelines, and shell scripts. Maintained and
+                                        extended legacy PHP systems until the replacement ReactJS app hosted in Amazon
+                                        S3 was started. I worked on pipelines and build scripts along with Lambda and
+                                        ReactJS to control the functionality and user experience. Developed headless
+                                        Drupal 8 connected to an Elastic Search cluster hooked up to a ReactJS frontend,
+                                        using AWS, Docker, PHP, JavaScript, jQuery, ReactJS, Node, CSS, MySQL/MariaDB,
+                                        MongoDB.</p>
+                                </div>
+                                <div id="drupal-developer">
+                                    <h3>HAYMARKET</h3>
+                                    <h3>SENIOR TECHNICAL ENGINEER</h3>
+                                    <h3>APR 2016 - OCT 2017</h3>
+                                </div>
+                                <div id="traffic-manager">
+                                    <h3>HAYMARKET</h3>
+                                    <h3>TRAFFIC MANAGER</h3>
+                                    <h3>APR 2015 - APR 2016</h3>
+                                </div>
+                                <div id="games-tools-programmer">
+                                    <h3>GAMES & TOOLS PROGRAMMER</h3>
+                                    <h3>FREELANCE</h3>
+                                    <h3>JUL 2014 - APR 2016</h3>
+                                </div>
+                                <div id="program-director">
+                                    <h3>CHANNEL 3 KIDS CAMP</h3>
+                                    <h3>PROGRAM DIRECTOR</h3>
+                                    <h3>JUL 2010 - APR 2014</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="content-section animate__animated animate__fadeIn" style="display:none;">
+                <h2 class="page-title">Contact</h2>
+                <div class="form-wrapper">
+                    <div class="form-card-switch">
+                        <label class="form-switch">
+                            <input type="checkbox" class="form-toggle">
+                            <span class="form-slider"></span>
+                            <span class="form-card-side"></span>
+                            <div class="flip-card__inner">
+                                <div class="flip-card__front">
+                                    <div class="form-title">Contact Form</div>
+                                    <form class="flip-card__form" action="">
+                                        <input class="flip-card__input" name="Name" placeholder="Name" type="text">
+                                        <input class="flip-card__input" name="Email" placeholder="Email" type="email">
+                                        <textarea class="flip-card__input" name="Message" placeholder="Message"
+                                            maxlength="500" rows="5"></textarea>
+
+                                        <button class="flip-card__btn">Let`s go!</button>
+                                    </form>
+                                </div>
+                                <div class="flip-card__back">
+                                    <div class="form-title">Contact Details</div>
+                                    <div class="card-title">Mathew Whitmore</div>
+                                    <div class="card-subtitle">Developer</div>
+                                    <div class="contact-info">
+                                        <div class="card-socials">
+                                            <a href="tel:+447525658552" target="_blank" class="card-socials-btn"
+                                                aria-label="Phone Number">
+                                                <i class="fa-solid fa-square-phone"></i>
+                                            </a>
+                                            <a href="mailto:mathewwhitmore@duck.com" target="_blank"
+                                                class="card-socials-btn" aria-label="Phone Number">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </a>
+                                            <a href="https://github.com/gingerbreadmat" target="_blank"
+                                                class="card-socials-btn" aria-label="GitHub Profile">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/mat-whitmore-48259561/" target="_blank"
+                                                class="card-socials-btn" aria-label="LinkedIn Profile">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section id="customise" class="content-section animate__animated animate__fadeIn" style="display:none;">
+                <h2 class="page-title">Customise</h2>
+                <div class="customise-container">
+                    <div class="base-card">
+                        <div class="pricing-block-content">
+                            <p>Toggle Light/Dark Mode:</p>
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle" class="toggle">
+                                <span class="slider"></span>
+                            </label>
+                            <p>Size:</p>
+                            <div class="radio-input">
+                                <label class="container">
+                                    <input value="small" name="value-radio" id="value-small" type="radio" checked
+                                        onclick="setSize('small'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Small</span>
+                                </label>
+                                <label class="container">
+                                    <input value="medium" name="value-radio" id="value-medium" type="radio"
+                                        onclick="setSize('medium'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Medium</span>
+                                </label>
+                                <label class="container">
+                                    <input value="large" name="value-radio" id="value-large" type="radio"
+                                        onclick="setSize('large'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Large</span>
+                                </label>
+                                <label class="container">
+                                    <input value="massive" name="value-radio" id="value-massive" type="radio"
+                                        onclick="setSize('massive'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Massive</span>
+                                </label>
+                            </div>
+                            <p>Color Theme:</p>
+                            <div class="radio-input">
+                                <label class="container">
+                                    <input value="yellow" name="color-radio" id="color-yellow" type="radio" checked
+                                        onclick="setColorTheme('yellow'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Yellow</span>
+                                </label>
+                                <label class="container">
+                                    <input value="blue" name="color-radio" id="color-blue" type="radio"
+                                        onclick="setColorTheme('blue'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Blue</span>
+                                </label>
+                                <label class="container">
+                                    <input value="orange" name="color-radio" id="color-orange" type="radio"
+                                        onclick="setColorTheme('orange'); updateSummary()">
+                                    <span class="checkmark"></span>
+                                    <span>Orange</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="base-card summary">
+                        <div class="pricing-block-content">
+                            <h3>Current Selections</h3>
+                            <p id="dark-mode-status">Dark Mode: Off</p>
+                            <p id="size-status">Size: Medium</p>
+                            <p id="color-status">Color: Yellow</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
