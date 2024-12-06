@@ -10,12 +10,19 @@ fi
 
 echo "Logged into the correct AWS account: $ACCOUNT_ID"
 
-# Sync the current bucket to the backup bucket
-echo "Backing up files from gingerbreadmat.com to gingerbread-cv..."
-aws s3 sync s3://gingerbreadmat.com s3://gingerbread-cv
-
 # Create an array of files to upload
-FILES=("base.html" "cv.pdf" "script.js" "styles.css")
+FILES=("base.html" "cv.pdf" "script.js" "styles.css" "favicon.svg")
+
+# Backup S3 bucket name
+SOURCE_BUCKET="s3://gingerbreadmat.com"
+DEST_BUCKET="s3://gingerbread-cv"
+
+# Loop through the files and sync each one
+echo "Backing up specified files from $SOURCE_BUCKET to $DEST_BUCKET..."
+for file in "${FILES[@]}"; do
+    echo "Syncing $file..."
+    aws s3 cp "$SOURCE_BUCKET/$file" "$DEST_BUCKET/$file"
+done
 
 # Loop through the files and upload them
 echo "Uploading files to gingerbreadmat.com..."

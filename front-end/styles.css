@@ -648,7 +648,7 @@
      width: 100%;
  }
 
- .flip-card__inner {
+ .mono-card__inner {
      margin-top: 20px;
      width: 300px;
      height: 350px;
@@ -660,16 +660,16 @@
      transform-style: preserve-3d;
  }
 
- .form-toggle:checked~.flip-card__inner {
+ .form-toggle:checked~.mono-card__inner {
      transform: rotateY(180deg);
  }
 
- .form-toggle:checked~.flip-card__front {
+ .form-toggle:checked~.mono-card__front {
      box-shadow: none;
  }
 
- .flip-card__front,
- .flip-card__back {
+ .mono-card__front,
+ .mono-card__back {
      min-height: 510px;
      padding: 20px;
      position: absolute;
@@ -678,19 +678,19 @@
      justify-content: center;
      -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
-     background: lightgrey;
+     background: lightmono;
      gap: 20px;
      border-radius: 5px;
      border: 2px solid var(--main-color);
      box-shadow: 4px 4px var(--main-color);
  }
 
- .flip-card__back {
+ .mono-card__back {
      width: 100%;
      transform: rotateY(180deg);
  }
 
- .flip-card__form {
+ .mono-card__form {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -744,7 +744,7 @@
      color: var(--card-background-color);
  }
 
- .flip-card__input {
+ .mono-card__input {
      width: 250px;
      height: 40px;
      border-radius: 5px;
@@ -758,28 +758,28 @@
      outline: none;
  }
 
- textarea.flip-card__input {
+ textarea.mono-card__input {
      height: 150px;
      resize: vertical;
      resize: none;
  }
 
- .flip-card__input::placeholder {
+ .mono-card__input::placeholder {
      color: var(--font-color-sub);
      opacity: 0.8;
  }
 
- .flip-card__input:focus {
+ .mono-card__input:focus {
      border: 2px solid var(--input-focus);
  }
 
- .flip-card__btn:active,
+ .mono-card__btn:active,
  .button-confirm:active {
      box-shadow: 0px 0px var(--main-color);
      transform: translate(3px, 3px);
  }
 
- .flip-card__btn {
+ .mono-card__btn {
      margin: 20px 0 20px 0;
      width: 120px;
      height: 40px;
