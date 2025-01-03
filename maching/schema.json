@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+      "title": "Job Description API",
+      "version": "1.0.0",
+      "description": "An API to handle job descriptions"
+    },
+    "servers": [
+      {
+        "url": "https://matching-ai.gingerbreadmat.com",
+        "description": "Production server"
+      }
+    ],
+    "paths": {
+      "/process": {
+        "post": {
+          "summary": "Submit a job description",
+          "description": "API endpoint to submit a job description.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "job_description": {
+                      "type": "string",
+                      "description": "A description of the job, including required knowledge, experience, and platforms."
+                    }
+                  },
+                  "required": ["job_description"],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Job description submitted successfully."
+            },
+            "400": {
+              "description": "Invalid request. Ensure 'job_description' is included."
+            }
+          }
+        }
+      }
+    }
+  }
+  

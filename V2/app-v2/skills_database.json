@@ -13,7 +13,7 @@
         "microservices": 4
     },
     "new_skills": {
-        "dev": 2,
+        "dev": 5,
         "azure": 4,
         "source control": 1,
         "knowledge": 13,
@@ -1193,6 +1193,8 @@
         "upstream": 1,
         "artificial": 1,
         "intelligence": 1,
-        "querying": 1
+        "querying": 1,
+        "bubble": 1,
+        "email": 1
     }
 }

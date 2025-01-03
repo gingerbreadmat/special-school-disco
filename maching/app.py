@@ -100,12 +100,12 @@ def lambda_handler(event, context):
         "Access-Control-Allow-Headers": "Content-Type",
     }
     
-    if event['httpMethod'] == 'OPTIONS':
-        return {
-            'statusCode': 200,
-            'headers': cors_headers,
-            'body': json.dumps({'message': 'CORS preflight successful'})
-        }
+    # if event['httpMethod'] == 'OPTIONS':
+    #     return {
+    #         'statusCode': 200,
+    #         'headers': cors_headers,
+    #         'body': json.dumps({'message': 'CORS preflight successful'})
+    #     }
     
     bucket_name = 'gingerbread-matching-ai'
     file_key = 'results.json'
