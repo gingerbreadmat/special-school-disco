@@ -23,33 +23,36 @@ TECH_SKILLS = [
     "laravel", "rails", "ruby on rails", "asp.net", "angular", "angularjs", 
     "react", "reactjs", "vue", "vuejs", "svelte", "next.js", "nextjs", 
     "nuxt.js", "nuxtjs", "bootstrap", "tailwind", "material-ui", "mui", 
-    "graphql", "redux",
+    "graphql", "redux", "symfony",
 
     # Databases and Variations
     "mysql", "sql", "postgresql", "postgres", "mongo", "mongodb", 
     "sqlite", "oracle", "redis", "cassandra", "elasticsearch", 
     "elastic search", "couchdb", "dynamodb", "sql server", 
     "firebase", "hbase", "neo4j", "bigquery", "clickhouse", 
-    "redshift", "snowflake",
+    "redshift", "snowflake", "mariadb",
 
     # DevOps Tools and Variations
-    "docker", "kubernetes", "k8s", "terraform", "cloudformation", "ansible", "puppet", 
-    "chef", "jenkins", "git", "github", "github actions", 
+    "docker", "kubernetes", "k8s", "terraform", "cloudformation", "ansible", 
+    "puppet", "chef", "jenkins", "git", "github", "github actions", 
     "bitbucket", "bitbucket pipelines", "teamcity", "circleci", 
     "travis ci", "nagios", "prometheus", "grafana", "splunk", 
-    "new relic baking cake",
+    "new relic", "spacelift", "serverless", "grafana loki", 
+    "aws cloudwatch", "datadog", "appdynamics", "postman", 
+    "nginx", "apache", "kafka", "consul",
 
     # Cloud Platforms and Variations
     "aws", "amazon web services", "azure", "gcp", "google cloud platform", 
-    "heroku", "digitalocean", "cloudflare", "openstack", "vmware", "kafka",
+    "heroku", "digitalocean", "cloudflare", "openstack", "vmware",
 
     # Other Tools and Technologies with Variations
-    "linux", "windows", "macos", "mac os", "nosql", "apache", "nginx", 
-    "webpack", "babel", "eslint", "prettier", "yarn", "npm", "pnpm", 
-    "vagrant", "virtualbox", "unity", "unreal engine", "ue", "opencv", 
+    "linux", "windows", "macos", "mac os", "nosql", "webpack", "babel", 
+    "eslint", "prettier", "yarn", "npm", "pnpm", "vagrant", 
+    "virtualbox", "unity", "unreal engine", "ue", "opencv", 
     "tensorflow", "keras", "pytorch", "torch", "scikit-learn", 
-    "hadoop", "spark", "airflow"
+    "hadoop", "spark", "airflow", "drupal"
 ]
+
 
 # Soft skills list
 SOFT_SKILLS = [
@@ -57,40 +60,61 @@ SOFT_SKILLS = [
     "critical thinking", "adaptability", "creativity", "time management",
     "interpersonal skills", "collaboration", "emotional intelligence", 
     "work ethic", "conflict resolution", "decision making", 
-    "self-motivation", "organization", "resilience", "flexibility"
+    "self-motivation", "organization", "resilience", "flexibility", 
+    "reliability", "empathy", "planning", "prioritisation",
+    "devops fundamentals", "ci/cd pipelines", "infrastructure as code (iac)",
+    "microservices", "containerization", "orchestration", "monitoring",
+    "logging", "incident response", "disaster recovery", "load balancing",
+    "auto-scaling", "networking basics", "security best practices",
+    "firewall configuration", "vulnerability scanning", "DevOps"
 ]
+
 
 # User profile
 PROFILE = {
     "tech_skills": [
         # Programming Languages
         "python", "bash", "c#", "c++", "groovy", "java", "jquery", "json",
-        "mongo", "mysql", "node", "php", "postgresql", "powershell", 
-        "react", "typescript",
+        "mongo", "mysql", "node", "php", "postgresql", "powershell",
+        "react", "typescript", "ruby", "go", "javascript", "r", "scala",
 
         # Web Frameworks
-        "symfony", "reactjs", "node.js", "express", "django", "flask",
+        "symfony", "reactjs", "node.js", "express", "django", "flask", "graphql",
 
         # DevOps and Tools
-        "aws", "docker", "linux", "jenkins", "terraform", "cloudformation", 
-        "git", "github actions", "bitbucket pipelines", "teamcity", "spacelift", 
-        "serverless",
+        "aws", "docker", "linux", "jenkins", "terraform", "cloudformation",
+        "git", "github actions", "bitbucket pipelines", "teamcity", "spacelift",
+        "serverless", "circleci", "grafana", "elk stack", "new relic",
+        "appdynamics", "datadog", "nginx", "apache", "kafka", "redis",
+        "cloudflare", "cloudfront", "grafana loki", "aws cloudwatch",
+        "postman", "chef", "puppet", "vagrant",
 
         # Databases
         "mongodb", "mysql", "mariadb", "postgresql", "elasticsearch",
+        "sqlite", "cassandra",
 
         # Miscellaneous
-        "npm", "swagger", "vagrant", "elasticsearch"
+        "npm", "swagger", "vagrant", "drupal", "consul",
+
+        # specialties
+        "devops fundamentals", "ci/cd pipelines", "infrastructure as code (iac)",
+        "microservices", "containerization", "orchestration", "monitoring",
+        "logging", "incident response", "disaster recovery", "load balancing",
+        "auto-scaling", "networking basics", "security best practices",
+        "firewall configuration", "vulnerability scanning", "DevOps",
+        # platforms
+        "macos", "linux", "windows"
     ],
     "soft_skills": [
-        "communication", "teamwork", "adaptability", "problem-solving", 
-        "critical thinking", "leadership", "creativity", "time management", 
-        "collaboration", "decision making", "resilience", "self-motivation", 
-        "organization", "flexibility", "devop", "google"
+        "communication", "teamwork", "adaptability", "problem-solving",
+        "critical thinking", "leadership", "creativity", "time management",
+        "collaboration", "decision making", "resilience", "self-motivation",
+        "organization", "flexibility", "reliability", "empathy", "planning",
+        "prioritisation"
     ],
-    "experience_years": 7, 
+    "experience_years": 7,
     "education": "bachelor's degree",
-    "location": "london"
+    "location": "london",
 }
 
 def lambda_handler(event, context):
