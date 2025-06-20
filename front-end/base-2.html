@@ -17,8 +17,7 @@
     <div class="site">
         <header>
             <label class="hamburger">
-                <input type="checkbox" id="mobileNavCheckbox" onclick="toggleMobileNav(true)" />
-
+                <input type="checkbox" onclick="toggleMobileNav()" />
                 <svg viewBox="0 0 32 32">
                     <path
                         d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
@@ -27,7 +26,7 @@
                 </svg>
             </label>
             <div class="title">
-                <h1 class="animate__animated animate__fadeInDown" style="text-align: center; padding:0 20px;">Mathew Whitmore</h1>
+                <h1 class="animate__animated animate__fadeInDown" style="text-align: center;">Mathew Whitmore</h1>
                 <p class="animate__animated animate__fadeInUp" style="text-align: center;">Developer</p>
             </div>
             <nav class="nav-container">
@@ -45,7 +44,7 @@
             <ul class="mobile-nav-list">
                 <li><button class="ui-btn"
                         onclick="showContent('profile'); toggleMobileNav();"><span>Profile</span></button></li>
-                <li><button class="ui-btn" onclick="showContent('job-matcher'); toggleMobileNav();"><span>Matcher AI</span></button></li>
+                <li><button class="ui-btn" onclick="showContent('job-matcher')"><span>Matcher AI</span></button></li>
                 <li><button class="ui-btn"
                         onclick="showContent('experience'); toggleMobileNav();"><span>Experience</span></button></li>
                 <li><button class="ui-btn"
@@ -54,11 +53,11 @@
         </div>
         <main>
             <section id="profile" class="content-section animate__animated animate__fadeIn" style="display:block;">
-                <div class="profile-conetnt-wrapper">
-                    <div class="inline profile-left-side">
+                <div class="conetnt-wrapper">
+                    <div class="inline">
                         <h2 class="page-title">Introduction</h2>
                         <p> Welcome to my little corner of the internet! This site is home to my latest project, Matcher AI, along with a bit about me, my work, and how to get in touch.</p>
-                        <p> So, what’s Matcher AI all about? It’s a simple tool I whipped up to see how well job descriptions match my skills. You paste a job description, and it gives you a percentage score on how likely I am to be a good fit. It’s no-nonsense and honest—if the role says “must bake cakes,” and I’m not a baker (even though I make a mean banana bread). The Matcher currently give low percentages even for jobs i would be great for, I'm still tweaking it and improving it.  Matcher AI will let you know.</p>
+                        <p> So, what’s Matcher AI all about? It’s a simple tool I whipped up to see how well job descriptions match my skills. You paste a job description, and it gives you a percentage score on how likely I am to be a good fit. It’s no-nonsense and honest—if the role says “must bake cakes,” and I’m not a baker (even though I make a mean banana bread), Matcher AI will let you know.</p>
                         <p> While you’re here, feel free to wander around. Check out my CV page for more on my experience and even download a copy if you’re curious. And if you’ve got thoughts, questions, or feedback—especially about Matcher AI—head over to the Contact page and drop me a line.</p>
                         <p> Thanks for stopping by, and I hope you enjoy the site!</p>
                         <h2 class="page-title">About Me</h2>
@@ -74,13 +73,13 @@
                                 <div class="mono-card__inner">
                                     <div class="mono-card__front">
                                         <div class="form-title">Contact Form</div>
-                                        <form class="mono-card__form" action=“https://formspree.io/f/mkggprbw” method=“POST”>
+                                        <form class="mono-card__form" action="https://formspree.io/f/mkggprbw" method="POST">
                                             <input class="mono-card__input" name="Name" placeholder="Name" type="text">
                                             <input class="mono-card__input" name="Email" placeholder="Email" type="email">
                                             <textarea class="mono-card__input" name="Message" placeholder="Message"
                                                 maxlength="500" rows="5"></textarea>
 
-                                            <button class="mono-card__btn">Let`s go!</button>
+                                            <button type="submit" class="mono-card__btn">Let`s go!</button>
                                         </form>
                                     </div>
                                     <div class="mono-card__back">

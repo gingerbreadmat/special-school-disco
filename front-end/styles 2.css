@@ -68,7 +68,7 @@ header {
 
 header .title {
   color: var(--text-secondary-color);
-  padding-right: 2rem;
+  padding-right: 20px;
 }
 
 header h1 {

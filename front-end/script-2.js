@@ -126,13 +126,8 @@ function setColorTheme(color) {
   updateSummary();
 }
 
-function toggleMobileNav(isCheckbox = false) {
+function toggleMobileNav() {
   const mobileNav = document.getElementById("mobileNav");
-  if (!isCheckbox) {
-    const checkbox = document.getElementById("mobileNavCheckbox");
-    checkbox.checked = !checkbox.checked;
-  }
-
   if (mobileNav.style.display === "none" || mobileNav.style.display === "") {
     mobileNav.style.display = "flex";
   } else {
